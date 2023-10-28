@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon server/app.js",
-        "build": "cd client && npm install && npm run build",
+        "client": "cd client && npm start",
+        "build": "npm install && cd client && npm install && npm run build",
         "test": "mocha --timeout 10000"
     },
     "author": "",
